@@ -1,0 +1,36 @@
+To fight Joker better Batman has brought a Lazer-Gun called Knight. This gun can target and destroy any entity in it's range, which is same as a Knight in a chess game.The guns will also destroy self guns when found in range. Given 'n' and 'm' as dimensions of a n x m ChessBoard find the MAXIMUM number of Knights that can be arranged such that the Knights do not harm each other.
+
+Input Format
+
+First line contains a single integer T denoting the number of test cases.
+
+Next T lines contain 2 space separated integers n and m which denote the number of rows and number of columns in the chessboard.
+
+Constraints
+
+1 <= T <= 1000
+
+1 <= n,m <= 10^9
+
+Output Format
+
+A single integer denoting the maximum number of knights that can be placed on the board.
+
+Sample Input 0
+
+1
+3 3
+Sample Output 0
+
+5
+Explanation 0
+
+Row 1 : * _ *
+
+Row 2 : _ * _
+
+Row 3 : * _ *
+
+Where " * " denotes the position of the Knights .
+
+Thus, 5.
