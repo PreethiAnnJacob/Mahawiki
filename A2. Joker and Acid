@@ -1,0 +1,23 @@
+t=input()
+for i in range(t):
+    a,b=map(int,raw_input().split())
+    if a>b:
+        a,b=b,a
+    count=2
+    x=0
+    y=0
+    while x!=0 or y!=b or count<b:
+        y+=a
+        if y>b:
+            x=y-b
+            y=b
+        else:
+            x=0
+        if y!=b and y!=a:
+            count+=1
+        if x!=0 and y==b:
+            y=x
+            x=0
+            if y!=b and y!=a:
+                count+=1
+    print count
