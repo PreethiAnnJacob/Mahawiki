@@ -1,0 +1,26 @@
+After his defeat on ChessBoard Joker thinks he can kill Batman by giving him Acid to drink thereby making him choke (or will he ?) . Acid will be transferred from one place to another in a silicon sealed container specially made to hold this acid. Now Joker needs to know the volumes that has to be ordered for getting the silicon containers. Given an input testcases and followed by the two volumes of measuring flasks , find the number of volumes that can be measured in the larger measuring flask .
+
+Input Format
+
+First line has a number t which denotes the number of test cases.
+
+Secondn line onwards, there are t rows with each row having 2 integers separated b spaces a and b
+
+Constraints
+
+T = 100000 1<=a,b<=10^18
+
+Output Format
+
+Output is a number. NOTE : Print the output for different test cases in different lines.
+
+Sample Input 0
+
+1
+1 2
+Sample Output 0
+
+2
+Explanation 0
+
+Taking empty second flask and filled first flask we can measure 1 unit volume and the by pouring the same again we can measure 2 unit volume.
