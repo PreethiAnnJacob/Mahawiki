@@ -1,23 +1,34 @@
 t=input()
 for i in range(t):
     a,b=map(int,raw_input().split())
-    if a>b:
-        a,b=b,a
-    count=2
-    x=0
-    y=0
-    while x!=0 or y!=b or count<b:
-        y+=a
-        if y>b:
-            x=y-b
-            y=b
-        else:
-            x=0
-        if y!=b and y!=a:
-            count+=1
-        if x!=0 and y==b:
-            y=x
-            x=0
-            if y!=b and y!=a:
-                count+=1
-    print count
+    if (a==b):
+        count=a
+    else:
+        if(a>b):
+            a,b=b,a
+        #x=a
+        y=a
+        arr=[0]*b
+        arr[a-1]=1
+        arr[b-1]=1
+        count=2
+        while(count<b):
+            if((y+a)>=b):
+                x=y+a-b
+                #print "y=",b
+                #Here y=b Also check if in next step y=x=b if x=b
+                if(x==0 or x==b):
+                    break
+                y=x
+                if (arr[y-1]==0):
+                    count=count+1
+                    arr[y-1]=1
+            else:
+                y=y+a
+            #print "y=",y
+            if(arr[y-1]==0):
+                    count=count+1
+                    arr[y-1]=1
+    print count        
+    
+    //got 2 testcases wrong and 1 correct
